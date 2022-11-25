@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(20, 19, 19);
+
+}
+.container{
+    display: grid;
+    grid-template-columns: 10% auto 10%;
+    row-gap: 10px;
+    color: white;
+}
+header{
+    grid-column: 1/3;
+    font-size: 40px;
+    color: aqua;
+    margin: 10%;
+
+}
+.tour{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-columns: auto 40%;
+}
+.images{
+    grid-column: 1/2;
+    text-align: center;
+    font-family: cursive;
+    font-size: larger;
+    color: aqua;
+}
+.para{
+    grid-column: 2/3;
+    margin-left: 30px;
+    font-family: cursive;
+    font-size: large;
+}
+.img{
+    width: 100%;
+}
+.task{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin: 10% 0;
+
+}
+table{
+    border-collapse: collapse;
+    border: 2px groove pink;
+    width: 100%;
+    text-align: center;
+}
+
+th{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(4, 32, 250);
+    color: white;
+    height: 65px;
+}
+.no1{
+    background-color: rgb(209, 211, 214);
+    color: black;
+}
+.no2{
+    background-color: rgb(212, 232, 249);
+    color: black;
+}
+.no3{
+    background-color: rgb(210, 208, 208);
+    color: black;
+}
+.no4{
+    background-color: rgb(207, 232, 254);
+    color: black;
+}
+.no5{
+    background-color: rgb(205, 206, 207);
+    color: black;
+}
+td{
+    padding: 5% 1.2%;
+}
+@media screen and (max-width:760px){
+    .container{
+        display: grid;
+        grid-template-columns: 10% auto 10%;
+        row-gap: 10px;
+        color: white;
+    }
+    .tour{
+        grid-column: 2/3;
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .tour div{
+        grid-column: 1/2;
+    }
+}

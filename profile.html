@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script> -->
+    <!-- css link -->
+    <link rel="stylesheet" href="profile.css">
+    <!-- <script src="signup.js"></script> -->
+</head>
+<body>
+    <div class="flex-container">
+        <div class="card">
+            <div class="background"></div>
+            <img class="img1" src="images/profile.jpg" alt="image1" style="width: 32%;">
+            <div class="card-body">
+                <p class="name" >Name: <span>Employee name</span></p>
+                <p class="email">Email: <span>email@gmail.com</span></p>
+                <p class="contact">contact no: <span>Phone No</span></p>
+                <p class="address">Address: <span>address</span></p>
+                <p class="password">Password: <span>password</span></p>
+                <p class="dob">DoB: <span>DoB</span></p>
+            </div> 
+            <button class="changePasswordBtn">Change Password!</button>
+            <button><a href="home.html" style="text-decoration:none;color:black">Home</a></button>
+        </div>
+    </div>
+    
+    <div class="changePasswordForm">
+      <div class="container">
+        <form id="signup" class="form">
+            <h1  style="text-align: center;">Change Password</h1> 
+            <div class="form-field">
+                <label for="currentPassword" style="color:black">Current Password:</label>
+                <input type="password" name="currentPassword" id="currentPassword" autocomplete="on" placeholder="Current-password">
+                <small id="old"></small>
+            </div>
+            <div class="form-field">
+                <label for="newPassword" style="color:black">New Password:</label> 
+                <input type="password" name="newPassword" id="newPassword"  autocomplete="on" placeholder="New-Password">
+                <small id="new"></small>
+            </div>
+            <div class="form-field " style="width:100%">
+                <input  class="confirmBtn" type="submit" value="change">
+            </div>
+        </form>
+      </div>
+    </div>
+ 
+    
+    
+  <!-- <script type="module" src="signup.js"></script> -->
+  <script src="profileSignup.js"></script>
+</body>
+</html>

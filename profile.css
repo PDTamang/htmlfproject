@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.img1 {
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-left: 32%;
+  margin-top: -20%;
+  margin-bottom: 10%;
+  position: relative;
+  box-shadow: 3px 3px 3px rgb(8, 174, 246);
+}
+.card {
+  border: 1px solid #f0f0f0;
+  width: 40%;
+  background-color: #c9bdbe;
+  margin-top: 1%;
+  height: auto;
+  box-shadow: 3px 20px 10px rgb(16, 32, 39);
+}
+.background {
+  width: 100%;
+  height: 120px;
+  background-image: url("images/profileBackground.jpg");
+  background-size: cover;
+  height: 15rem;
+  /* clip-path: polygon(0% 0%, 100% 0%, 100% 80%, 0% 100%); */
+  clip-path: polygon(0% 0%, 100% 0%, 80% 150%, 50% 400%);
+  /* clip-path: polygon(10% 0%, 100% 10%, 100% 100%, 0% 90%) */
+}
+.buttons {
+  margin-top: 10%;
+  margin-bottom: 20%;
+}
+.card-body {
+  text-align: center;
+  align-items: center;
+  margin: 20px;
+}
+.card-body p {
+  margin: 7px;
+  font-weight: bolder;
+}
+span {
+  font-family: sans-serif;
+  color: rgb(13, 135, 13);
+}
+
+.flex-container button {
+  margin: 2px;
+  background-color: rgb(80, 188, 80);
+  font-weight: bolder;
+  border-radius: 4px;
+  width: 40%;
+  margin-left: 30%;
+}
+button:hover {
+  background-color: inherit;
+}
+.changePasswordForm {
+  visibility: hidden;
+  background-color: #c9bdbe;
+  width: 40%;
+  height: auto;
+  margin-left: 30%;
+  margin-top: -30rem;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 3px 20px 10px rgb(16, 32, 39);
+}
+.changePasswordForm input {
+  width: 100%;
+}
+.container {
+  padding: 50px;
+}
+.confirmBtn {
+  margin-top: 20px;
+  width: 100%;
+  background: rgb(152, 220, 50);
+  border-radius: 5px;
+}
+
+.form-field input {
+  border: solid 2px #f0f0f0;
+  border-radius: 3px;
+  padding: 5px;
+  margin-bottom: 5px;
+  font-size: 12px;
+  width: 100%;
+}
+#drop-down input {
+  max-width: 10%;
+}
+.Radio-box {
+  padding: 0;
+  margin: 1px;
+  display: flex;
+  flex-direction: row;
+}
+
+.button input {
+  margin: 30px;
+  min-width: 30%;
+  background-color: #ffff;
+  border: 1px solid greenyellow;
+}
+.button input:hover {
+  background-color: #e4959e;
+}
+.form-field.error input {
+  border-color: red;
+}
+.form-field.success input {
+  border-color: #4bb543;
+}
+.form-field small {
+  color: #b00020;
+}
+
+/* responsive  */
+@media screen and (max-width: 550px) {
+  body {
+    max-width: 500px;
+  }
+}

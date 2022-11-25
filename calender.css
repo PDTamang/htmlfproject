@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    cursor:pointer;
+}
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: ceter;
+}
+.container{
+    margin: 30px 20%;
+    text-align: center;
+}
+header{
+    font-size: 40px;
+    color: aqua;
+    margin: 10px;
+    font-family: cursive;
+
+}
+.month{
+    width: 100%;
+}
+table{
+    padding: 30px;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 20px;
+}
+th:hover{
+    border-radius: 20px;
+}
+span{
+    padding: 2px;
+}
+span:hover{
+    font-size: 30px;
+}
+th:hover{
+    background-color: rgb(39, 110, 110);
+    font-size: 30px;
+}
+thead{
+    background-color: rgb(60, 125, 182);
+}
+.holiday{
+    background-color: red;
+}
+
+.fab{
+    margin-top: -425px;
+    visibility: hidden;
+}
+.march{
+    margin-top: -425px;
+    visibility: hidden;
+}
+.april{
+    margin-top: -480px;
+    visibility: hidden;
+}
+.may{
+    margin-top: -425px;
+    visibility: hidden;
+}
+.june{
+    margin-top: -425px;
+    visibility: hidden;
+}
+.july{
+    margin-top: -425px;
+    visibility: hidden;
+}
+.aug{
+    margin-top: -425px;
+    visibility: hidden;
+}
+.sept{
+    margin-top: -475px;
+    visibility: hidden;
+}
+.oct{
+    margin-top: -425px;
+    visibility: hidden;
+}
+.nov{
+    margin-top: -420px;
+    visibility: hidden;
+}
+.dec{
+    margin-top: -478px;
+    visibility: hidden;
+}

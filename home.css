@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  gap: 30px;
+  margin-top: 200px;
+}
+
+#btnl {
+  padding: 10px;
+  border-radius: 30px;
+  background-color: lime;
+}
+
+#btnr {
+  padding: 10px;
+  border-radius: 30px;
+  background-color: lime;
+}
+
+img {
+  /* width: 90%; */
+  max-height: 800px;
+}
+.hover-menu {
+  color: white;
+  display: none;
+}
+#info-hover:hover ul.hover-menu {
+  display: block;
+}

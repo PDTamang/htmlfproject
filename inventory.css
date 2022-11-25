@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(176, 198, 216);
+}
+.container {
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.header {
+  /* align-items: center; */
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+
+  margin: 20px;
+}
+.search-button input {
+  width: 400px;
+  height: 30px;
+}
+button {
+  width: 150px;
+  height: 30px;
+  background-color: aquamarine;
+}
+h3,
+p {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: black;
+  margin-bottom: 10px;
+}
+
+h4 {
+  font-size: 19px;
+  border: 5px solid rgb(23, 178, 245);
+  background-color: rgb(23, 178, 245);
+}
+#contact {
+  background-color: aliceblue;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin-top: 400px;
+  min-width: 100%;
+}
+#contact div {
+  padding: 40px;
+}
+.detail {
+  margin-inline-start: 250px;
+}
+.text h2 {
+  text-align: center;
+}
+@media screen and (max-width: 1000px) {
+  .detail {
+    margin-inline-start: 0px;
+  }
+  #contact div {
+    padding: 5px;
+  }
+  .detail img {
+    width: 500px;
+    margin-inline-end: 0px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .detail {
+    margin-inline-start: 0px;
+  }
+  #contact div {
+    padding: 10px;
+  }
+  .detail img {
+    width: 500px;
+    margin-inline-end: 0px;
+  }
+}

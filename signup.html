@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <!-- <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script> -->
+    <!-- css link -->
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="container">
+        <h1>Sign Up</h1>
+        <form
+          name="registration"
+          class="registartion-form"
+          onsubmit="return formValidation()"
+        >
+          <table>
+            <tr>
+              <td><label for="name">Name:</label></td>
+              <td>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="your name"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="email">Email:</label></td>
+              <td>
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="your email"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="password">Password:</label></td>
+              <td><input type="password" name="password" id="password" /></td>
+            </tr>
+            <tr>
+              <td><label for="phoneNumber">Phone Number:</label></td>
+              <td>
+                <input type="number" name="phoneNumber" id="phoneNumber" />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="gender">Gender:</label></td>
+              <td>
+                Male: <input type="radio" name="gender" value="male" /> Female:
+                <input type="radio" name="gender" value="female" /> Other:
+                <input type="radio" name="gender" value="other" />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="language">language</label></td>
+              <td>
+                <select name="language" id="language">
+                  <option value="">Select language</option>
+                  <option value="English">English</option>
+                  <option value="Spanish">Spanish</option>
+                  <option value="Hindi">Hindi</option>
+                  <option value="Arabic">Arabic</option>
+                  <option value="Russian">Russian</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="zipcode">Post</label></td>
+              <td><input type="text" name="post" id="post" /></td>
+            </tr>
+            <tr>
+              <td><label for="about">About:</label></td>
+              <td>
+                <textarea
+                  name="about"
+                  id="about"
+                  placeholder="Write about yourself..."
+                ></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <input type="submit" class="submit" value="Register" />
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+    <script src="signup.js"></script>
+  </body>
+</html>
